@@ -1,7 +1,6 @@
 # IPUpdater
 
-![](https://img.shields.io/badge/kinda-%20useful-blue)<br>
-:man_shrugging:
+![](https://img.shields.io/badge/kinda-%20useful-blue) :man_shrugging:
 
 This shell script will check your IP against IPInfo.io and compare it to the last collected value. If the two differ, the script will then update the value at AWS Route53 and then update a firewall rule at DigitalOcean.
 
