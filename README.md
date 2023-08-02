@@ -1,6 +1,6 @@
 # IPUpdater
 
-![](https://img.shields.io/badge/kinda-%20useful-blue) 
+![](https://img.shields.io/badge/usefulness%20level-%20kinda-blue) 
 
 :man_shrugging:
 
