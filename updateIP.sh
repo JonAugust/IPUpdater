@@ -61,9 +61,9 @@ then
 	              --data-urlencode "From=+1$TWILIO_FROM" \
 	              --data-urlencode "To=+1$TWILIO_TO" \
 	              -u $TWILIO_SID:$TWILIO_TOKEN >/dev/null 2>&1
-	      fi
-	      if [ "$PUSHOVER_ENABLED" = true ]
-	      then
+        fi
+        if [ "$PUSHOVER_ENABLED" = true ]
+        then
 	          /usr/bin/curl --location 'https://api.pushover.net/1/messages.json' \
                 --form "token=$PUSHOVER_TOKEN" \
                 --form "user=$PUSHOVER_USER" \
@@ -80,9 +80,9 @@ then
 	            --data-urlencode "From=+1$TWILIO_FROM" \
 	            --data-urlencode "To=+1$TWILIO_TO" \
 	            -u $TWILIO_SID:$TWILIO_TOKEN >/dev/null 2>&1
-	      fi
-	      if [ "$PUSHOVER_ENABLED" = true ]
-	      then
+        fi
+        if [ "$PUSHOVER_ENABLED" = true ]
+        then
 	        /usr/bin/curl --location 'https://api.pushover.net/1/messages.json' \
               --form "token=$PUSHOVER_TOKEN" \
               --form "user=$PUSHOVER_USER" \
