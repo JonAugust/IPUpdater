@@ -23,6 +23,8 @@
 # export PUSHOVER_ENABLED=false
 # export PUSHOVER_USER=""
 # export PUSHOVER_TOKEN=""
+
+# You will want to edit the path to your credentials file:
 . /home/jon/Creds/IPUpdaterCreds.sh
 
 TEMPFILE="/tmp/updateIP.tmp"
