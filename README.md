@@ -1,8 +1,10 @@
 # IPUpdater
 
-![](https://img.shields.io/badge/kinda-%20useful-blue) :man_shrugging:
+![](https://img.shields.io/badge/kinda-%20useful-blue) 
 
-This shell script will check your IP against IPInfo.io and compare it to the last collected value. If the two differ, the script will then update the value at AWS Route53 and then update a firewall rule at DigitalOcean.
+:man_shrugging:
+
+This shell script will ask IPInfo.io for your current public-facing IP and compare it to the last collected value. If the two differ, the script will then update the value at AWS Route53 and then update a firewall rule at DigitalOcean.
 
 This configuration is because I have DNS services at AWS and Droplets at DigitalOcean.  The firewall rule limits ssh access to my home network.
 
