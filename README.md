@@ -4,7 +4,9 @@
 
 :man_shrugging:
 
-IPUpdater is a DIY Dynamic DNS Updater.  You can run this from your home on a Linux instance or a Raspberry Pi.
+IPUpdater is a DIY Dynamic DNS Updater.  You can run this from your home on a Linux instance or a Raspberry Pi.  I have this set to run every minute using this cron entry:
+
+```* * * * * /home/jon/IPUpdater/updateIP.sh > /dev/null 2>&1```
 
 This shell script will ask IPInfo.io for your current public-facing IP and compare it to the last collected value. If the two differ, the script will then update the value at AWS Route53 and then update a firewall rule at DigitalOcean.
 
